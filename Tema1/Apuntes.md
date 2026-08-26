@@ -68,12 +68,12 @@ Busca en tu ordenador un fichero con extensión **`.docx`**, ábrelo con el **Bl
   
 - Caracteres extendidos (128–255, en ASCII extendido): Permiten letras acentuadas, símbolos gráficos y otros caracteres especiales.
 
-- ❓ Realiza: Conéctate a **Internet** y busca una **tabla de códigos ASCII de 8 bits** y comprueba las características descritas anteriormente.  
+❓ Realiza: Conéctate a **Internet** y busca una **tabla de códigos ASCII de 8 bits** y comprueba las características descritas anteriormente.  
 
 
 #### 3️⃣ Identificación de ficheros
 Observa la siguiente **captura de una carpeta en Windows**.  
-- ❓ Indica **el tipo de cada fichero** y **qué contiene**.
+❓ Indica **el tipo de cada fichero** y **qué contiene**.
 
 ![Lista de ficheros](img/Lista.png)
 
