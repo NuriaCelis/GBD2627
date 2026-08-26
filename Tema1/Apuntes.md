@@ -54,19 +54,7 @@ Busca en tu ordenador un fichero con extensión **`.docx`**, ábrelo con el **Bl
 
 
 #### 2️⃣ Tabla de códigos ASCII
-📝 **Tabla ASCII**: Es un conjunto estandarizado de códigos numéricos que representan caracteres que una computadora puede entender. Su uso en informática permite almacenar, interpretar y transmitir texto de manera uniforme entre sistemas y dispositivos, garantizando que todos comprendan los mismos caracteres.El contenido de la tabla ASCII es el siguiente:
-
-- Caracteres de control (0–31 y 127): No se imprimen; se usaban para controlar dispositivos, como el retorno de carro CR o salto de línea LF.
-
-- Símbolos y signos de puntuación: Por ejemplo !, @, #, $, %.
-
-- Números (48–57): Los dígitos del 0 al 9.
-
-- Letras mayúsculas (65–90): A a Z.
-
-- Letras minúsculas (97–122): a a z.
-  
-- Caracteres extendidos (128–255, en ASCII extendido): Permiten letras acentuadas, símbolos gráficos y otros caracteres especiales.
+📝 **Tabla ASCII**: Es un conjunto estandarizado de códigos numéricos que representan caracteres que una computadora puede entender. Su uso en informática permite almacenar, interpretar y transmitir texto de manera uniforme entre sistemas y dispositivos, garantizando que todos comprendan los mismos caracteres. El contenido de la tabla ASCII incluye **caracteres de control (0–31 y 127)**, que no se imprimen y se utilizaban para controlar dispositivos y determinadas operaciones, como el retorno de carro (CR) o el salto de línea (LF); **símbolos y signos de puntuación**, como `!`, `@`, `#`, `$` y `%`; **números (48–57)**, que corresponden a los dígitos del `0` al `9`; **letras mayúsculas (65–90)**, que corresponden a las letras de la `A` a la `Z`; y **letras minúsculas (97–122)**, que corresponden a las letras de la `a` a la `z`. Además, en las denominadas variantes de **ASCII extendido (128–255)** se incluyen letras acentuadas, símbolos gráficos y otros caracteres especiales.
 
 ❓ Realiza: Conéctate a **Internet** y busca una **tabla de códigos ASCII de 8 bits** y comprueba las características descritas anteriormente.  
 
