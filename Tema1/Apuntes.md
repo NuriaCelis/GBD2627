@@ -42,24 +42,21 @@ Indica el **uso del fichero**:
 - **Históricos**: guardan datos antiguos que ya no se usan en procesos diarios.
 
 
-![Clasificación de ficheros](img/clasificacion2.jpg)
+![Clasificación de ficheros](img/tipoFicheros.jpg)
 
 #### 🏋️‍♂️ Ejercicios sobre ficheros
 
 **Realiza los siguientes ejercicios:**
 
 #### 1️⃣ Abrir un fichero
-Busca en tu ordenador un fichero con extensión **`.docx`**, ábrelo con el **Bloc de notas**.  
+Crea en tu ordenador un fichero con **LibreOffice Writer**, guárdalo vacío en el escritorio e intenta abrirlo con el **Editor de texto**.  
 - ❓ Pregunta: ¿Por qué no se ve bien el contenido del fichero?
 
+Crea en el escritorio con el botón derecho un nuevo documento. Ve a propiedades del fichero tanto de este fichero como el que creaste en el apartado anterior.
 
-#### 2️⃣ Tabla de códigos ASCII
-📝 **Tabla ASCII**: Es un conjunto estandarizado de códigos numéricos que representan caracteres que una computadora puede entender. Su uso en informática permite almacenar, interpretar y transmitir texto de manera uniforme entre sistemas y dispositivos, garantizando que todos comprendan los mismos caracteres. El contenido de la tabla ASCII incluye **caracteres de control (0–31 y 127)**, que no se imprimen y se utilizaban para controlar dispositivos y determinadas operaciones, como el retorno de carro (CR) o el salto de línea (LF); **símbolos y signos de puntuación**, como `!`, `@`, `#`, `$` y `%`; **números (48–57)**, que corresponden a los dígitos del `0` al `9`; **letras mayúsculas (65–90)**, que corresponden a las letras de la `A` a la `Z`; y **letras minúsculas (97–122)**, que corresponden a las letras de la `a` a la `z`. Además, en las denominadas variantes de **ASCII extendido (128–255)** se incluyen letras acentuadas, símbolos gráficos y otros caracteres especiales.
+- ❓ Pregunta: ¿Que diferencia encuentras en las propiedades de un fichero y otro?
 
-❓ Realiza: Conéctate a **Internet** y busca una **tabla de códigos ASCII de 8 bits** y comprueba las características descritas anteriormente.  
-
-
-#### 3️⃣ Identificación de ficheros
+#### 2️⃣ Identificación de ficheros
 Observa la siguiente **captura de una carpeta en Windows**.  
 ❓ Indica **el tipo de cada fichero** y **qué contiene**.
 
@@ -176,7 +173,7 @@ En este modelo, la información está **repartida en distintas localizaciones** 
 * El sistema gestor se encarga de que los usuarios perciban los datos como si estuvieran en una única base.
 * Ejemplos comerciales: **Google Spanner**, **Amazon Aurora**, **Microsoft Cosmos DB**, **CockroachDB**, **Cassandra (DataStax Enterprise)**.
 
-<img src="img/clasificacion1.png" alt="Clasificación de las bases de datos" width="400">
+<img src="img/tipoBases.png" alt="Clasificación de las bases de datos" width="400">
 
 
 #### 🏋️‍♂️ Ejercicios sobre bases de datos
@@ -223,7 +220,7 @@ Veremos conceptos básicos sobre **bases de datos en general** y **bases de dato
 - **📌 Registro (o tupla):** cada **fila** de la tabla. Contiene todos los valores de un conjunto de campos para un elemento.  
   Ejemplo: en la tabla `CLIENTES`, un registro puede contener la información de Juan García o Fernando Martínez.
 
-![Tabla](img/Tabla.png)
+![Tabla](img/partesTabla.png)
 
 ### 📌 3.2.- Otros conceptos más específicos de las bases de datos
 
@@ -247,7 +244,7 @@ Veremos conceptos básicos sobre **bases de datos en general** y **bases de dato
   - Las entidades se **relacionan** entre sí a través de estas **claves foráneas**, creando vínculos entre los datos.
 
 
-![Relacion](img/Relacion.png)
+![Relacion](img/relacion.png)
 
 - **📊 Ejemplo de entidades y claves:**  
   - En este gráfico tenemos dos entidades: **Clientes** y **Vehículos**.  
@@ -294,6 +291,7 @@ Un **Sistema Gestor de Bases de Datos (SGBD)** es una aplicación que permite a 
 
 > 💡 La principal herramienta de un SGBD es la **interfaz de usuario**, normalmente mediante **SQL (Structure Query Language)**, un lenguaje estandarizado que permite interactuar con el servidor de manera uniforme.
 
+![Lenguajes](img/lenguajes.png)
 
 ### 🏷️ 3.4.- Tipos de SGBD
 
