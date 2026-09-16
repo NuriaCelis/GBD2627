@@ -246,6 +246,7 @@ Veremos conceptos básicos sobre **bases de datos en general** y **bases de dato
 
 ![Relacion](img/relacion.png)
 
+
 - **📊 Ejemplo de entidades y claves:**  
   - En este gráfico tenemos dos entidades: **Clientes** y **Vehículos**.  
   - La **clave primaria** de Clientes es: `CodCliente`  
