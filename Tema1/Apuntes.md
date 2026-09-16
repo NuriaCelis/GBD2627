@@ -244,7 +244,7 @@ Veremos conceptos básicos sobre **bases de datos en general** y **bases de dato
   - Las entidades se **relacionan** entre sí a través de estas **claves foráneas**, creando vínculos entre los datos.
 
 
-![Relacion](img/relacion.png)
+![Relacion](img/Relacion.png)
 
 
 - **📊 Ejemplo de entidades y claves:**  
