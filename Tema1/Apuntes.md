@@ -42,7 +42,7 @@ Indica el **uso del fichero**:
 - **Históricos**: guardan datos antiguos que ya no se usan en procesos diarios.
 
 
-![Clasificación de ficheros](img/tipoFicheros.jpg)
+![Clasificación de ficheros](img/tipoFicheros.png)
 
 #### 🏋️‍♂️ Ejercicios sobre ficheros
 
@@ -173,7 +173,7 @@ En este modelo, la información está **repartida en distintas localizaciones** 
 * El sistema gestor se encarga de que los usuarios perciban los datos como si estuvieran en una única base.
 * Ejemplos comerciales: **Google Spanner**, **Amazon Aurora**, **Microsoft Cosmos DB**, **CockroachDB**, **Cassandra (DataStax Enterprise)**.
 
-<img src="img/tipoBases.png" alt="Clasificación de las bases de datos" width="400">
+<img src="img/tipoBases.png" alt="Clasificación de las bases de datos">
 
 
 #### 🏋️‍♂️ Ejercicios sobre bases de datos
