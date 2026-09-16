@@ -249,24 +249,15 @@ Veremos conceptos básicos sobre **bases de datos en general** y **bases de dato
 
 - **📊 Ejemplo de entidades y claves:**  
   - En este gráfico tenemos dos entidades: **Clientes** y **Vehículos**.  
-  - La **clave primaria** de Clientes es: `CodCliente`  
-  - La **clave primaria** de Vehículos es: `Matricula`  
-  - La **clave foránea** de Vehículos es: `CodCliente`.  
-    - Los Clientes se relacionan con Vehículos a través del `CodCliente` que figura en ambas tablas.
+  - La **clave primaria** de Clientes es: `id_cliente`  
+  - La **clave primaria** de Vehículos es: `id_vehículo`  
+  - La **clave foránea** de Vehículos es: `id_cliente` en la tabla Vehículos.  
+    - Los Clientes se relacionan con Vehículos a través del `id_cliente` que figura en ambas tablas.
 
 - **🔗 Restricción de integridad referencial:**  
   - Esta restricción garantiza que un **campo clave ajena** siempre esté relacionado con un valor válido de la **clave primaria** de la tabla principal.  
   - Mantiene la relación entre dos tablas **sincronizada** durante operaciones de actualización y eliminación.  
-  - Ejemplo: no podemos tener un Vehículo cuyo código de cliente **no exista** previamente en la tabla de Clientes.
-
-- **🗂️ Metadatos:**  
-  - Son **datos sobre los datos** presentes en la base de datos.  
-  - Ejemplos:  
-    - Qué tipo de datos se van a almacenar (texto, números, fechas…)  
-    - Qué nombre se le da a cada dato (nombre, apellidos, fecha, precio, edad…)  
-    - Cómo están agrupados los datos  
-    - Cómo se relacionan entre sí
-
+  - Ejemplo: no podemos tener un Vehículo cuyo identificador de cliente **no exista** previamente en la tabla de Clientes.
 
 ### 🖥️ 3.3.- Sistemas Gestores de Bases de Datos (SGBD)
 
