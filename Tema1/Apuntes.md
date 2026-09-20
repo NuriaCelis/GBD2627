@@ -298,6 +298,8 @@ Los SGBD se pueden clasificar según el tipo de BD que gestionan (jerárquicas, 
   - Ejemplos: **ORACLE**, **DB2**.  
   - Para aprendizaje se pueden usar versiones **gratuitas educativas**, limitadas pero útiles para entender la filosofía de ORACLE.
 
+![Comparativa](img/comparativa.png)
+
 #### 📝 HOJAS DE EJERCICIOS
 
 - 💻 **Hoja de ejercicios 1**  
