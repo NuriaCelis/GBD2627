@@ -312,7 +312,7 @@ El tipo de correspondencia o relación de cardinalidad expresa el número máxim
 
 **Resumen de Cardinalidad y Tipo de Correspondencia**
 
-<img src="img/correspondencia3.jpg" alt="Correspondencia 2" width="400px"/>  
+<img src="img/correspondencia3.jpg" alt="Correspondencia 2"/>  
 
 **Realiza el siguiente ejercicio:**  
 
