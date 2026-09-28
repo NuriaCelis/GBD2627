@@ -60,13 +60,18 @@ En cada etapa utilizamos un modelo de datos diferente, que nos permite represent
 
 🧠 Modelo conceptual
 Partimos del problema real y nos centramos en qué información necesitamos y cómo se relaciona. No pensamos todavía en tablas ni en un SGBD concreto.
-👉 En este tema utilizaremos el modelo Entidad-Relación (E-R).
+
+    👉 En este tema utilizaremos el modelo Entidad-Relación (E-R).
+
 ⚙️ Modelo lógico
 Transformamos el diseño conceptual en una estructura que pueda ser entendida por un tipo de SGBD. Aquí ya aparecen elementos como tablas, campos, claves y relaciones.
-👉 Trabajaremos con el modelo Relacional.
+
+    👉 Trabajaremos con el modelo Relacional.
+
 💾 Modelo físico
 Finalmente, adaptamos ese diseño a un SGBD concreto, teniendo en cuenta cómo se almacenarán y gestionarán realmente los datos.
-👉 Por ejemplo, podemos implementar nuestra base de datos utilizando MySQL, PostgreSQL, Oracle, Access, etc.
+
+    👉 Por ejemplo, podemos implementar nuestra base de datos utilizando MySQL, PostgreSQL, Oracle, Access, etc.
 
 Por tanto, los modelos no son soluciones diferentes, sino distintas representaciones de la misma solución a lo largo del proceso de diseño.
 
