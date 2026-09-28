@@ -89,7 +89,7 @@ De esta forma, el diagrama nos permite ver de un vistazo qué entidades forman p
 
 Se han desarrollado varios modelos E/R y diagramas de representación para el modelo. Vemos en la siguiente imagen un ejemplo de Diagrama E-R que utilizaremos en clase:  
 
-<img src="img/esquemaER.png" alt="Esquema E-R" width="400px"/>
+<img src="img/esquemaER.png" alt="Esquema E-R" width="600px"/>
 
 En los siguientes apartados vamos a ir desgranando los elementos que componen un diagrama E-R y cómo se construye.  
 
