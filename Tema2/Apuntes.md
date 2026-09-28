@@ -451,15 +451,12 @@ El elemento principal del modelo relacional es la **RELACIÓN**. Una relación e
 - 🗄️ **Estructura física o lógica** implementada como **tabla** en la base de datos.  
 - 📊 Contiene **tuplas (filas)** y **atributos (columnas)** que representan los datos de la asociación.
 
-
-
-
 Al conjunto de valores que puede tomar una columna se le denomina **dominio**, y estos pueden ser de dos tipos:  
 
 - **General**: si los valores pueden ser todos los existentes dentro del tipo de dato correspondiente a la columna.  
 - **Restringido**: si sólo puede tomar valores dentro de un rango de un dominio general, por ejemplo, números reales comprendidos entre 0 y 10.  
 
-<img src="img/relacional2.png" alt="Dominios de columnas" width="600px"/>  
+<img src="img/relacional2.png" alt="Dominios de columnas" width="400px"/>  
 
 ### 5.2.- ⚖️ Restricciones del modelo relacional
 
