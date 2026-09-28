@@ -503,7 +503,7 @@ PRIMARY KEY · UNIQUE · NOT NULL · FOREIGN KEY · CHECK · ASSERTION · TRIGGE
   
 ### 5.3.- 🔑 Claves primarias y claves ajenas
 
-La clave primaria es la columna, o conjunto de columnas, que identifica de forma única cada fila de una tabla.
+La **clave primaria** es la columna, o conjunto de columnas, que identifica de forma única cada fila de una tabla.
 
 Debe cumplir dos condiciones:
 
