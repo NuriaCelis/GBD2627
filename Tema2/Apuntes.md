@@ -47,7 +47,6 @@ Un **modelo de datos** es un conjunto de herramientas y reglas para representar:
 - Orientado a Objetos  
 - Relacional orientado a objetos  
 
----
 
 ### 1.1.- 🔎 Clasificación de los modelos de datos
 
@@ -71,7 +70,7 @@ Finalmente, adaptamos ese diseño a un SGBD concreto, teniendo en cuenta cómo s
 
 Por tanto, los modelos no son soluciones diferentes, sino distintas representaciones de la misma solución a lo largo del proceso de diseño.
 
-<img src="img/modeloDatos.png" alt="Clasificación de los modelos de datos" width="400">
+<img src="img/modeloDatos.png" alt="Clasificación de los modelos de datos" width="600">
 
 💡 En este tema seguiremos este proceso: comenzaremos con el modelo conceptual, utilizando diagramas Entidad-Relación, y posteriormente lo transformaremos en un modelo lógico relacional, que nos permitirá llegar finalmente a las tablas de nuestra base de datos.
 
