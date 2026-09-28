@@ -130,19 +130,19 @@ Los atributos de una entidad se representan mediante **pequeños círculos unido
 
 El **tipo de dato** de un atributo determina qué tipo de valores puede tomar un atributo. Los más habituales son:
 
-🔤 Texto → nombres, direcciones, descripciones.
+🔤 **Texto** → nombres, direcciones, descripciones.
 
-🔢 Entero → edades, cantidades, unidades.
+🔢 **Entero** → edades, cantidades, unidades.
 
-💰 Decimal → precios, pesos, notas.
+💰 **Decimal** → precios, pesos, notas.
 
-📅 Fecha / hora → fechas de nacimiento, citas, registros.
+📅 **Fecha / hora** → fechas de nacimiento, citas, registros.
 
-☑️ Booleano → Sí/No, Verdadero/Falso.
+☑️ **Booleano** → Sí/No, Verdadero/Falso.
 
-📦 Binario → imágenes, documentos, archivos.
+📦 **Binario** → imágenes, documentos, archivos.
 
-📋 Enumerado → valores de una lista concreta: Pendiente, Enviado, Entregado.
+📋 **Enumerado** → valores de una lista concreta: Pendiente, Enviado, Entregado.
 
 
 El **dominio de dato** de un atributo determina que tipo de valores puede tomas y además indicar que valores son válidos.
@@ -211,7 +211,7 @@ Ejemplos de atributos y dominios de la entidad EMPLEADO:
     - **Clave primaria o principal**: entre los posibles conjuntos de atributos que identifican a los elementos, debería ser la más adecuada por **simplicidad**, **longitud**, **representatividad** y **estabilidad**.  
     - **Clave secundaria o alternativa**: puede haber varias en una entidad, pero no se debe abusar de ellas. Son todas aquellas que decidamos aparte de la primaria.
 
-<img src="img/atributos.png" alt="Resumen Atributos" width="400px"/>
+<img src="img/atributos.png" alt="Resumen Atributos" />
 
 
 **Observa y analiza el siguiente ejemplo:**  
@@ -473,7 +473,7 @@ Al conjunto de valores que puede tomar una columna se le denomina **dominio**, y
 - **General**: si los valores pueden ser todos los existentes dentro del tipo de dato correspondiente a la columna.  
 - **Restringido**: si sólo puede tomar valores dentro de un rango de un dominio general, por ejemplo, números reales comprendidos entre 0 y 10.  
 
-<img src="img/relacional2.png" alt="Dominios de columnas" width="200px"/>  
+<img src="img/relacional2.png" alt="Dominios de columnas" width="600px"/>  
 
 ### 5.2.- ⚖️ Restricciones del modelo relacional
 
