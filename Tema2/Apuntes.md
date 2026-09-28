@@ -54,21 +54,21 @@ Cuando queremos crear una base de datos, no pasamos directamente del problema re
 
 Podemos imaginarlo como un proceso en varias etapas, en el que vamos transformando la realidad poco a poco hasta llegar a una base de datos que podamos implementar en un SGBD:
 
-Problema real → Modelo conceptual → Modelo lógico → Modelo físico → Base de datos
+**Problema real → Modelo conceptual → Modelo lógico → Modelo físico → Base de datos**
 
 En cada etapa utilizamos un modelo de datos diferente, que nos permite representar la información con un nivel de detalle cada vez mayor.
 
-🧠 Modelo conceptual
+🧠 **Modelo conceptual**
 Partimos del problema real y nos centramos en qué información necesitamos y cómo se relaciona. No pensamos todavía en tablas ni en un SGBD concreto.
 
     👉 En este tema utilizaremos el modelo Entidad-Relación (E-R).
 
-⚙️ Modelo lógico
+⚙️ **Modelo lógico**
 Transformamos el diseño conceptual en una estructura que pueda ser entendida por un tipo de SGBD. Aquí ya aparecen elementos como tablas, campos, claves y relaciones.
 
     👉 Trabajaremos con el modelo Relacional.
 
-💾 Modelo físico
+💾 **Modelo físico**
 Finalmente, adaptamos ese diseño a un SGBD concreto, teniendo en cuenta cómo se almacenarán y gestionarán realmente los datos.
 
     👉 Por ejemplo, podemos implementar nuestra base de datos utilizando MySQL, PostgreSQL, Oracle, Access, etc.
