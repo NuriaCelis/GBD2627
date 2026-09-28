@@ -28,13 +28,6 @@
 
 ## 1.- 📊 MODELO DE DATOS
 
-Un modelo pretende crear una simplificación de la realidad para poder comprenderla mejor.  
-Para realizar un modelo se realiza una **abstracción más simple** de la realidad.  
-
-Se usan modelos en diferentes áreas de la informática, como por ejemplo:  
-- UML en Ingeniería del Software  
-- Modelo Entidad/Relación para BD  
-
 Un **modelo de datos** es un conjunto de herramientas y reglas para representar:  
 - Datos  
 - Relaciones entre éstos  
@@ -71,23 +64,23 @@ Transformamos el diseño conceptual en una estructura que pueda ser entendida po
 💾 **Modelo físico**
 Finalmente, adaptamos ese diseño a un SGBD concreto, teniendo en cuenta cómo se almacenarán y gestionarán realmente los datos.
 
-    👉 Por ejemplo, podemos implementar nuestra base de datos utilizando MySQL, PostgreSQL, Oracle, Access, etc.
+    👉 Podemos implementar nuestra base de datos utilizando MySQL, PostgreSQL, Oracle, Access, etc.
 
 Por tanto, los modelos no son soluciones diferentes, sino distintas representaciones de la misma solución a lo largo del proceso de diseño.
 
 <img src="img/modeloDatos.png" alt="Clasificación de los modelos de datos" width="600">
 
-💡 En este tema seguiremos este proceso: comenzaremos con el modelo conceptual, utilizando diagramas Entidad-Relación, y posteriormente lo transformaremos en un modelo lógico relacional, que nos permitirá llegar finalmente a las tablas de nuestra base de datos.
-
 ## 2.- 🗂️ LOS DIAGRAMAS E/R
 
-El modelo Entidad-Relación es un modelo **puramente conceptual**. Representa el funcionamiento de un sistema de información mediante un diagrama Entidad-Relación (E/R). Facilita enormemente el diseño de una base de datos. Es muy representativo del funcionamiento del sistema de información y es **independiente del SGBD**. Toma como referencia la percepción que tenemos del funcionamiento del mundo real.
+El modelo Entidad-Relación es un modelo conceptual que permite representar gráficamente la información de un sistema, antes de crear la base de datos.
 
-En un **esquema Entidad–Relación** representamos de manera gráfica cómo se organiza la información en una base de datos. Consta solo de tres elementos:
+Es independiente del SGBD y facilita el diseño de la base de datos.
 
-- **Entidades**: son los objetos principales sobre los que queremos almacenar información (por ejemplo, un *Cliente*, un *Coche*, un *Empleado*…). Cada entidad se representa con un **rectángulo**.  
-- **Atributos**: son las propiedades o características de las entidades. Por ejemplo, un *Cliente* puede tener como atributos *nombre*, *teléfono* o *dirección*, y un *Coche* puede tener *matrícula* o *marca*. Los atributos se representan con **círculos**, unidos a la entidad a la que pertenecen.  
-- **Relaciones**: muestran cómo se conectan las entidades entre sí. Por ejemplo, un *Cliente* puede **alquilar** un *Coche*. Las relaciones se representan con un **rombo**, que se une mediante **líneas** a las entidades que relaciona.
+Un diagrama E/R utiliza tres elementos:
+
+🟦 Entidades → objetos sobre los que queremos guardar información. Se representan con rectángulos.
+⚪ Atributos → características de las entidades. Se representan con círculos.
+🔷 Relaciones → indican cómo se relacionan las entidades. Se representan con rombos.
 
 De esta forma, el diagrama nos permite ver de un vistazo qué entidades forman parte del sistema, qué características tiene cada una y cómo se relacionan entre ellas.
 
@@ -128,7 +121,7 @@ Los atributos de una entidad se representan mediante **pequeños círculos unido
 
 <img src="img/atributo1.png" alt="Atributos" width="400px"/>
 
-El **tipo de dato** de un atributo determina qué tipo de valores puede tomar un atributo. Los más habituales son:
+El **tipo de dato de un atributo** determina qué tipo de valores puede tomar un atributo. Los más habituales son:
 
 🔤 **Texto** → nombres, direcciones, descripciones.
 
@@ -145,7 +138,7 @@ El **tipo de dato** de un atributo determina qué tipo de valores puede tomar un
 📋 **Enumerado** → valores de una lista concreta: Pendiente, Enviado, Entregado.
 
 
-El **dominio de dato** de un atributo determina que tipo de valores puede tomas y además indicar que valores son válidos.
+El **dominio de dato de un atributo** determina que tipo de valores puede tomar y además indicar que valores son válidos.
 
 Diferencia entre tipo de dato y dominio:
 - **Tipo de dato** → indica cómo se representa o almacena un valor.
@@ -203,7 +196,7 @@ Ejemplos de atributos y dominios de la entidad EMPLEADO:
     <img src="img/atributo4.png" alt="Atributos opcionales" width="400px"/>
 
 4. 🧮 *Atributos derivados y no derivados*  
-    - Un atributo es **derivado** si se puede obtener a partir de los datos contenidos en otros atributos. Por ejemplo, **IMPORTE DE VENTA** si se obtiene de **UNIDADES VENDIDAS** × **PRECIO UNIDAD** (no es recomendable abusar de atributos derivados).  
+    - Un atributo es **derivado** si se puede obtener a partir de los datos contenidos en otros atributos. Por ejemplo, **IMPORTE DE VENTA** si se obtiene de **UNIDADES VENDIDAS** × **PRECIO UNIDAD** (no es recomendable abusar de atributos derivados). Se representa con una D mayúscula al lado del atributo.
     - Un atributo es **no derivado** si su valor no depende de ningún otro atributo.
 
 5. 🔑 *Atributo Clave*  
@@ -215,7 +208,7 @@ Ejemplos de atributos y dominios de la entidad EMPLEADO:
 
 
 **Observa y analiza el siguiente ejemplo:**  
-Indica para cada atributo de qué tipo es, haciendo un examen lo más exhaustivo posible. Indica para cada campo si es **obligatorios/opcionales**, **compuestos/simples**, **derivado/no derivado**, **monovaluado/multivaluado**.
+Indica para cada atributo de qué tipo es, haciendo un examen lo más exhaustivo posible. Indica para cada campo si es **clave primaria**, **clave alternativa**, **obligatorios/opcionales**, **compuestos/simples**, **derivado/no derivado**, **monovaluado/multivaluado**.
 
 <img src="img/atributo6.png" alt="Ejemplo de atributos" width="400px"/>
 
@@ -268,7 +261,7 @@ La cardinalidad se indica mediante una **pareja de números entre paréntesis**:
 - El **primer número** indica el mínimo (0 o 1).  
 - El **segundo número** indica el máximo (1 o N, para muchos).  
 
-<img src="img/cardinalidad1.png" alt="Ejemplo de cardinalidad" width="400px"/>
+<img src="img/cardinalidad1.png" alt="Ejemplo de cardinalidad" width="700px"/>
 
 #### ❓ Preguntas para obtener mínimos y máximos
 
