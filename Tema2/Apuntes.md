@@ -477,27 +477,28 @@ Al conjunto de valores que puede tomar una columna se le denomina **dominio**, y
 
 ### 5.2.- ⚖️ Restricciones del modelo relacional
 
-Los datos que almacenan las BD tienen como objetivo fundamental representar situaciones del mundo real. En ocasiones esto no es así.  
+Las restricciones son reglas que garantizan que los datos de una base de datos sean correctos y coherentes.
 
-Supongamos, por ejemplo, el caso de una relación **empleados** en la que su sueldo es negativo (-1000 euros). Esto hace necesaria la creación de **restricciones** que nos permitan representar de manera coherente dicha información.  
+Podemos distinguir dos tipos:
 
-Existen dos tipos de restricciones:  
+🔹 Restricciones del modelo relacional
 
-- **Propias o inherentes al modelo relacional**: son condiciones más generales, propias de un modelo de datos, y se deben cumplir en toda base de datos que siga dicho modelo.  
-    - No puede haber dos tuplas o filas que tengan el mismo contenido en todas sus columnas.  
-    - Ninguna columna que sea clave primaria (restricción de usuario) admite nulos.  
-    - Ninguna columna que sea clave primaria admite valores repetidos en las tuplas.  
-    - Ninguna columna que sea clave alternativa admite valores repetidos en las tuplas.  
+Son reglas generales que se aplican a cualquier base de datos relacional:
 
-- **Propias del usuario**: son condiciones específicas de una base de datos concreta, es decir, son las que se deben cumplir en una base de datos particular con unos usuarios concretos, pero que no son necesariamente relevantes en otra base de datos. Por ejemplo, tener empleados con sueldo negativo. En otra BD, puede que no haya sueldo, o que sea siempre positivo.  
-  El modelo permite que el usuario establezca:  
-    - **Clave primaria** (Primary Key)  
-    - **Unicidad o clave alternativa** (UNIQUE)  
-    - **Obligatoriedad** (NOT NULL)  
-    - **Clave ajena** (FOREIGN KEY)  
-    - **Verificación o chequeo** (CHECK)  
-    - **Aserciones o asertos** (ASSERTION)  
-    - **Disparadores** (TRIGGER)  
+🔑 La clave primaria no puede ser nula ni repetirse.
+🔑 Las claves alternativas (UNIQUE) no pueden repetirse.
+🧩 Una fila no puede ser idéntica a otra en todos sus valores.
+
+🔹 Restricciones definidas por el usuario
+
+Son reglas específicas de cada base de datos. Por ejemplo: el sueldo de un empleado debe ser mayor que 0.
+
+Entre ellas encontramos:
+
+PRIMARY KEY · UNIQUE · NOT NULL · FOREIGN KEY · CHECK · ASSERTION · TRIGGER
+
+
+💡 En resumen: las primeras son reglas generales del modelo; las segundas permiten adaptar las reglas a las necesidades concretas de cada base de datos.
 
   
 ### 5.3.- 🔑 Claves primarias y claves ajenas
@@ -511,20 +512,13 @@ Debe cumplir dos condiciones:
 
 Cada tabla puede tener una única clave primaria, aunque puede estar formada por una o varias columnas.
 
+La **clave ajena (FOREIGN KEY)** sirve para indicar que uno o más atributos que forman clave ajena en una tabla (tabla secundaria en la relación, referenciante) están relacionados con uno o más atributos de otra tabla (principal en la relación, referenciada) que forman clave primaria o clave alternativa en esa otra tabla.  
+
 💡 Ejemplo: en una tabla ALUMNO, el DNI puede ser la clave primaria porque permite identificar de forma única a cada alumno.
 
 <img src="img/clave1.png" alt="Clave primaria" width="400px"/>  
 
 **Nota:** En este esquema, la línea continua representa una relación identificada. La clave ajena forma parte de la clave primaria de la tabla donde está. La línea discontinua representa una relación no identificada. La clave ajena no forma parte de la clave primaria de la tabla donde está.  
-
-La **clave ajena (FOREIGN KEY)** sirve para indicar que uno o más atributos que forman clave ajena en una tabla (tabla secundaria en la relación, referenciante) están relacionados con uno o más atributos de otra tabla (principal en la relación, referenciada) que forman clave primaria o clave alternativa en esa otra tabla.  
-
-Por ejemplo, si tenemos una tabla **COUNTRY** que contiene datos de todos los países del mundo y una tabla **CITY** que contiene datos de ciudades del mundo, para controlar el país al que pertenece cada ciudad, podrá haber una relación de clave ajena entre:  
-
-- **CITY** (tabla secundaria)  
-- **COUNTRY** (tabla principal)  
-
-<img src="img/clave2.png" alt="Clave ajena" width="400px"/>  
 
 ### 5.4.- 🛡️ Integridad referencial
 
