@@ -320,7 +320,8 @@ El tipo de correspondencia o relación de cardinalidad expresa el número máxim
 
 #### 📝 HOJAS DE EJERCICIOS
 
-💻 Hoja de ejercicios 1.  Colocamos la cardinalidad y correspondencia de los tres primeros ejercicios y hacemos el resto de los ejercicios.
+💻 Hoja de ejercicios 1.  Colocamos la cardinalidad y correspondencia de los tres primeros ejercicios.
+💻 Hoja de ejercicios 2. Solo ejercicios 1 y 2.
 
 ### 2.6.- 🏛️ Debilidad
 
@@ -360,7 +361,7 @@ Por ejemplo, cada línea de pedido se identificaría con **numPed** y **numLinea
 
 #### 📝 HOJAS DE EJERCICIOS
 
-💻 Hoja de ejercicios 2.  
+💻 Hoja de ejercicios 2. Solo ejercicio 3.  
 💻 Hoja de ejercicios 3.  
 💻 Hoja de ejercicios 4.  
 
@@ -408,7 +409,9 @@ Las **cardinalidades de la especialización** para los cuatro casos que hemos vi
 #### 📝 HOJAS DE EJERCICIOS
 
 💻 Hoja de ejercicios 5.  
-💻 Hoja de ejercicios 6.  
+💻 Hoja de ejercicios 6.
+  
+
 
 ## 4.- 🛠️ CONSTRUCCIÓN DE UN DIAGRAMA E/R
 
@@ -436,7 +439,7 @@ Los pasos a seguir serán:
 #### 📝 HOJAS DE EJERCICIOS
 
 💻 Hoja de ejercicios 7.  
-💻 Hoja de ejercicios 7 bis. 
+
 
 
 ## 5.- 🗄️ MODELO RELACIONAL
@@ -452,7 +455,7 @@ El elemento principal del modelo relacional es la **RELACIÓN**. Una relación e
 > ⚠️ **NOTA IMPORTANTE**  
 > No debes confundir el concepto de **relación en el modelo relacional** con el concepto de **relación en el modelo E/R**.
 
----
+
 
 #### 🔹 Relación en el modelo Entidad-Relación (ER)
 - 💡 **Concepto lógico** que representa una **asociación entre entidades**.  
@@ -462,7 +465,7 @@ El elemento principal del modelo relacional es la **RELACIÓN**. Una relación e
 - 🗄️ **Estructura física o lógica** implementada como **tabla** en la base de datos.  
 - 📊 Contiene **tuplas (filas)** y **atributos (columnas)** que representan los datos de la asociación.
 
----
+
 
 
 Al conjunto de valores que puede tomar una columna se le denomina **dominio**, y estos pueden ser de dos tipos:  
@@ -499,13 +502,16 @@ Existen dos tipos de restricciones:
   
 ### 5.3.- 🔑 Claves primarias y claves ajenas
 
-La **Clave primaria o principal (PRIMARY KEY)** es un conjunto de atributos o columnas que identifican de forma única a cada tupla de una relación (a cada fila de una tabla).  
+La clave primaria es la columna, o conjunto de columnas, que identifica de forma única cada fila de una tabla.
 
-Se debe declarar clave primaria en cualquier tabla, aunque no es obligatorio hacerlo.  
+Debe cumplir dos condiciones:
 
-Sólo puede definirse una clave primaria en una tabla y debe ser, dentro de las columnas que puedan servir para identificar a cada tupla, la columna o el conjunto de columnas que se considere mejor para identificar de forma única a cada tupla o elemento de la tabla.  
+🚫 No puede contener valores nulos.
+🔄 No puede haber valores repetidos.
 
-Sobre las claves primarias quedan establecidas las restricciones inherentes comentadas anteriormente (que no puede estar vacía y que no se puede repetir).  
+Cada tabla puede tener una única clave primaria, aunque puede estar formada por una o varias columnas.
+
+💡 Ejemplo: en una tabla ALUMNO, el DNI puede ser la clave primaria porque permite identificar de forma única a cada alumno.
 
 <img src="img/clave1.png" alt="Clave primaria" width="400px"/>  
 
