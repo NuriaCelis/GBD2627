@@ -373,9 +373,9 @@ El **Modelo E/R ampliado** recoge todos los conceptos y especificaciones del mod
 
   Una generalización se representa mediante un **triángulo invertido** que une la superclase y las subclases.  
 
-  <img src="img/ampliado1.png" alt="Generalización" width="400px"/>  
+ - **Especialización**: es el proceso inverso a la generalización. En la especialización se trata de buscar los **atributos específicos de las subclases** y las **restricciones de existencia** de elementos de las entidades.  
 
-- **Especialización**: es el proceso inverso a la generalización. En la especialización se trata de buscar los **atributos específicos de las subclases** y las **restricciones de existencia** de elementos de las entidades.  
+ <img src="img/ampliado1.png" alt="Generalización" width="400px"/>  
 
 Conforme a las restricciones de existencia de elementos de las entidades, nos podemos encontrar con los siguientes tipos de especialización o generalización:
 
@@ -398,12 +398,6 @@ Conforme a las restricciones de existencia de elementos de las entidades, nos po
 Las **cardinalidades de la especialización** para los cuatro casos que hemos visto son de la siguiente manera:  
 
 <img src="img/ampliado6.png" alt="Cardinalidades de especialización" width="400px"/>  
-
-#### 📝 HOJAS DE EJERCICIOS
-
-💻 Hoja de ejercicios 5.  
-💻 Hoja de ejercicios 6.
-  
 
 
 ## 4.- 🛠️ CONSTRUCCIÓN DE UN DIAGRAMA E/R
@@ -431,8 +425,9 @@ Los pasos a seguir serán:
 
 #### 📝 HOJAS DE EJERCICIOS
 
+💻 Hoja de ejercicios 5.  
+💻 Hoja de ejercicios 6.
 💻 Hoja de ejercicios 7.  
-
 
 
 ## 5.- 🗄️ MODELO RELACIONAL
@@ -447,8 +442,6 @@ El elemento principal del modelo relacional es la **RELACIÓN**. Una relación e
 
 > ⚠️ **NOTA IMPORTANTE**  
 > No debes confundir el concepto de **relación en el modelo relacional** con el concepto de **relación en el modelo E/R**.
-
-
 
 #### 🔹 Relación en el modelo Entidad-Relación (ER)
 - 💡 **Concepto lógico** que representa una **asociación entre entidades**.  
