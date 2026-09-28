@@ -481,7 +481,7 @@ Las restricciones son reglas que garantizan que los datos de una base de datos s
 
 Podemos distinguir dos tipos:
 
-🔹 Restricciones del modelo relacional
+🔹 **Restricciones del modelo relacional**
 
 Son reglas generales que se aplican a cualquier base de datos relacional:
 
@@ -489,7 +489,7 @@ Son reglas generales que se aplican a cualquier base de datos relacional:
 🔑 Las claves alternativas (UNIQUE) no pueden repetirse.
 🧩 Una fila no puede ser idéntica a otra en todos sus valores.
 
-🔹 Restricciones definidas por el usuario
+🔹 **Restricciones definidas por el usuario**
 
 Son reglas específicas de cada base de datos. Por ejemplo: el sueldo de un empleado debe ser mayor que 0.
 
