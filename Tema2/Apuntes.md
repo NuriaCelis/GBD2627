@@ -252,7 +252,7 @@ Antes de seguir avanzando con el resto de los conceptos, vamos a hacer algún ej
 
 #### 📝 HOJAS DE EJERCICIOS
 
-💻 Hoja de ejercicios 1. Solo hacemos el ejercicio 1, 2 y 3, sin poner las cardinalidades. Los completaremos más adelante.
+💻 Hoja de ejercicios 1. Hacemos el ejercicio 1, 2 y 3, sin poner las cardinalidades. Los completaremos más adelante.
 
 ### 2.4.- 🔢 Cardinalidad
 
@@ -305,17 +305,14 @@ Pensando en la imagen anterior:
 
 El tipo de correspondencia o relación de cardinalidad expresa el número máximo de elementos u ocurrencias que se pueden llegar a relacionar entre las entidades de una relación.
 
-- Uno a uno (1:1): Sería el caso de la relación **CASADO** entre las entidades PERSONA y PERSONA. Una persona podrá estar casada con otra persona pero no con muchas.  
-- Uno a muchos (1:N): Sería el caso de la relación **PERTENECE** entre las entidades MUNICIPIO y PROVINCIA. Un municipio sólo puede pertenecer a una provincia, mientras que a una provincia pertenecen muchos municipios.  
-- Muchos a muchos (N:M): Sería el caso de la relación **COMPRA** entre las entidades PRODUCTOS y CLIENTES. Un cliente puede comprar varios productos y un mismo tipo de producto será comprado por varios clientes.  
+- **Uno a uno (1:1)**: Sería el caso de la relación **CASADO** entre las entidades PERSONA y PERSONA. Una persona podrá estar casada con otra persona pero no con muchas.  
+- **Uno a muchos (1:N)**: Sería el caso de la relación **PERTENECE** entre las entidades MUNICIPIO y PROVINCIA. Un municipio sólo puede pertenecer a una provincia, mientras que a una provincia pertenecen muchos municipios.  
+- **Muchos a muchos (N:M)**: Sería el caso de la relación **COMPRA** entre las entidades PRODUCTOS y CLIENTES. Un cliente puede comprar varios productos y un mismo tipo de producto será comprado por varios clientes.  
 
-**Representación de cardinalidad y tipo de correspondencia**  para una relación unaria:
 
-<img src="img/correspondencia1.png" alt="Correspondencia 1" width="400px"/>  
+**Resumen de Cardinalidad y Tipo de Correspondencia**
 
-**Representación de cardinalidad y tipo de correspondencia**  para una relación binaria:
-
-<img src="img/correspondencia2.png" alt="Correspondencia 2" width="400px"/>  
+<img src="img/correspondencia3.jpg" alt="Correspondencia 2" width="400px"/>  
 
 **Realiza el siguiente ejercicio:**  
 
