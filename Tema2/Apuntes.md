@@ -128,7 +128,23 @@ Los atributos de una entidad se representan mediante **pequeños círculos unido
 
 <img src="img/atributo1.png" alt="Atributos" width="400px"/>
 
-El **dominio de un atributo** es todo el conjunto de valores que se pueden asignar a ese atributo.  
+El **tipo de dato** de un atributo determina qué tipo de valores puede tomar un atributo. Los más habituales son:
+
+🔤 Texto → nombres, direcciones, descripciones.
+🔢 Entero → edades, cantidades, unidades.
+💰 Decimal → precios, pesos, notas.
+📅 Fecha / hora → fechas de nacimiento, citas, registros.
+☑️ Booleano → Sí/No, Verdadero/Falso.
+📦 Binario → imágenes, documentos, archivos.
+📋 Enumerado → valores de una lista concreta: Pendiente, Enviado, Entregado.
+
+El **dominio de dato** de un atributo determina que tipo de valores puede tomas y además indicar que valores son válidos.
+
+Diferencia entre tipo de dato y dominio:
+- Tipo de dato → indica cómo se representa o almacena un valor.
+    Ej.: entero, decimal, texto, fecha, booleano.
+- Dominio → indica qué valores son válidos para un atributo.
+    Ej.: para Edad, el tipo puede ser entero, pero su dominio podría ser enteros entre 0 y 120.
 
 Ejemplos de atributos y dominios de la entidad EMPLEADO:  
 
