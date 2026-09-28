@@ -213,9 +213,6 @@ Ejemplos de atributos y dominios de la entidad EMPLEADO:
 
 <img src="img/atributos.png" alt="Resumen Atributos" width="400px"/>
 
-**Representación de los distintos tipos de atributos:**
-
-<img src="img/atributo5.png" alt="Representación de tipos de atributos" width="400px"/>
 
 **Observa y analiza el siguiente ejemplo:**  
 Indica para cada atributo de qué tipo es, haciendo un examen lo más exhaustivo posible. Indica para cada campo si es **obligatorios/opcionales**, **compuestos/simples**, **derivado/no derivado**, **monovaluado/multivaluado**.
