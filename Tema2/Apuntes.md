@@ -51,23 +51,29 @@ Un **modelo de datos** es un conjunto de herramientas y reglas para representar:
 
 ### 1.1.- 🔎 Clasificación de los modelos de datos
 
-Una opción bastante usada a la hora de clasificar los modelos de datos es hacerlo de acuerdo al **nivel de abstracción** que presentan:
+Cuando queremos crear una base de datos, no pasamos directamente del problema real a las tablas. Antes tenemos que analizar la información y diseñar cómo vamos a organizarla.
 
-- 🧠 **Modelos de Datos Conceptuales**  
-  Se usan en la fase de *Análisis*. Representan datos y relaciones.  
-  Ejemplo: *Modelo Entidad-Relación*  
+Podemos imaginarlo como un proceso en varias etapas, en el que vamos transformando la realidad poco a poco hasta llegar a una base de datos que podamos implementar en un SGBD:
 
-- ⚙️ **Modelos de Datos Lógicos**  
-  Describen la estructura de la base de datos según el SGBD.  
-  Ejemplo: *Modelo Relacional*  
+Problema real → Modelo conceptual → Modelo lógico → Modelo físico → Base de datos
 
-- 💾 **Modelos de Datos Físicos**  
-  Indican cómo se implementan los datos en el SGBD.  
-  Ejemplos: Access, MySQL, PostgreSQL, Oracle...  
+En cada etapa utilizamos un modelo de datos diferente, que nos permite representar la información con un nivel de detalle cada vez mayor.
+
+🧠 Modelo conceptual
+Partimos del problema real y nos centramos en qué información necesitamos y cómo se relaciona. No pensamos todavía en tablas ni en un SGBD concreto.
+👉 En este tema utilizaremos el modelo Entidad-Relación (E-R).
+⚙️ Modelo lógico
+Transformamos el diseño conceptual en una estructura que pueda ser entendida por un tipo de SGBD. Aquí ya aparecen elementos como tablas, campos, claves y relaciones.
+👉 Trabajaremos con el modelo Relacional.
+💾 Modelo físico
+Finalmente, adaptamos ese diseño a un SGBD concreto, teniendo en cuenta cómo se almacenarán y gestionarán realmente los datos.
+👉 Por ejemplo, podemos implementar nuestra base de datos utilizando MySQL, PostgreSQL, Oracle, Access, etc.
+
+Por tanto, los modelos no son soluciones diferentes, sino distintas representaciones de la misma solución a lo largo del proceso de diseño.
 
 <img src="img/modeloDatos.png" alt="Clasificación de los modelos de datos" width="400">
 
-En este tema vamos a trabajar el modelo conceptual, más concretamente el modelo Entidad-Relación, o modelo E-R y el modelo lógico, con el modelo Relacional.
+💡 En este tema seguiremos este proceso: comenzaremos con el modelo conceptual, utilizando diagramas Entidad-Relación, y posteriormente lo transformaremos en un modelo lógico relacional, que nos permitirá llegar finalmente a las tablas de nuestra base de datos.
 
 ## 2.- 🗂️ LOS DIAGRAMAS E/R
 
