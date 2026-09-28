@@ -148,9 +148,9 @@ El **tipo de dato** de un atributo determina qué tipo de valores puede tomar un
 El **dominio de dato** de un atributo determina que tipo de valores puede tomas y además indicar que valores son válidos.
 
 Diferencia entre tipo de dato y dominio:
-- Tipo de dato → indica cómo se representa o almacena un valor.
+- **Tipo de dato** → indica cómo se representa o almacena un valor.
     Ej.: entero, decimal, texto, fecha, booleano.
-- Dominio → indica qué valores son válidos para un atributo.
+- **Dominio** → indica qué valores son válidos para un atributo.
     Ej.: para Edad, el tipo puede ser entero, pero su dominio podría ser enteros entre 0 y 120.
 
 Ejemplos de atributos y dominios de la entidad EMPLEADO:  
