@@ -545,7 +545,8 @@ Al modificar el contenido de una **CITY**, se comprueba que el nuevo valor carga
 
 Existen diversas formas de representar el modelo relacional. Veamos ejemplos de algunas de ellas:
 
-- **Esquema relacional conectado a columnas**: 
+- **Esquema relacional conectado a columnas**:
+- 
   <img src="img/esquema1.png" alt="Esquema relacional columnas" width="400px"/>  
 
 - **Esquema relacional crow's foot o pata de cuervo**: La parte de la pata va en la tabla donde está la clave ajena.  
