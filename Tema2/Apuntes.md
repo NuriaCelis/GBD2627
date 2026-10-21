@@ -469,7 +469,9 @@ Podemos distinguir dos tipos:
 Son reglas generales que se aplican a cualquier base de datos relacional:
 
 🔑 La clave primaria no puede ser nula ni repetirse.
+
 🔑 Las claves alternativas (UNIQUE) no pueden repetirse.
+
 🧩 Una fila no puede ser idéntica a otra en todos sus valores.
 
 🔹 **Restricciones definidas por el usuario**
@@ -491,6 +493,7 @@ La **clave primaria** es la columna, o conjunto de columnas, que identifica de f
 Debe cumplir dos condiciones:
 
 🚫 No puede contener valores nulos.
+
 🔄 No puede haber valores repetidos.
 
 Cada tabla puede tener una única clave primaria, aunque puede estar formada por una o varias columnas.
