@@ -683,7 +683,7 @@ Una relación está en 1FN si cada atributo es atómico, es decir, cada celda co
 
 **Ejemplo:** tabla de pedidos de clientes
 
-<img src="img/formas2.png" alt="Ejemplo pedidos 1FN" width="400px"/>  
+<img src="img/formas2.png" alt="Ejemplo pedidos 1FN"/>  
 
 Se observa que la tabla no está en 1FN, ya que hay campos repetidos: Num_art, Nom_art, Cant y Precio.  
 
