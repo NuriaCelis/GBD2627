@@ -469,7 +469,9 @@ Podemos distinguir dos tipos:
 Son reglas generales que se aplican a cualquier base de datos relacional:
 
 🔑 La clave primaria no puede ser nula ni repetirse.
+
 🔑 Las claves alternativas (UNIQUE) no pueden repetirse.
+
 🧩 Una fila no puede ser idéntica a otra en todos sus valores.
 
 🔹 **Restricciones definidas por el usuario**
@@ -491,6 +493,7 @@ La **clave primaria** es la columna, o conjunto de columnas, que identifica de f
 Debe cumplir dos condiciones:
 
 🚫 No puede contener valores nulos.
+
 🔄 No puede haber valores repetidos.
 
 Cada tabla puede tener una única clave primaria, aunque puede estar formada por una o varias columnas.
@@ -542,7 +545,8 @@ Al modificar el contenido de una **CITY**, se comprueba que el nuevo valor carga
 
 Existen diversas formas de representar el modelo relacional. Veamos ejemplos de algunas de ellas:
 
-- **Esquema relacional conectado a columnas**: 
+- **Esquema relacional conectado a columnas**:
+- 
   <img src="img/esquema1.png" alt="Esquema relacional columnas" width="400px"/>  
 
 - **Esquema relacional crow's foot o pata de cuervo**: La parte de la pata va en la tabla donde está la clave ajena.  
