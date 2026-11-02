@@ -693,7 +693,7 @@ Se observa que la tabla no está en 1FN, ya que hay campos repetidos: Num_art, N
 
 Solución: crear una nueva tabla con estos campos y su clave primaria, dejando la tabla original con la clave primaria de la orden:
 
-<img src="img/formas3.png" alt="Tabla normalizada 1FN" width="400px"/>  
+<img src="img/formas3.png" alt="Tabla normalizada 1FN"/>  
 
 ### 6.2.- 2FN (Segunda forma normal)
 
@@ -713,8 +713,8 @@ En nuestro ejemplo:
 
 Resultado final:
 
-<img src="img/formas4.png" alt="Tablas 2FN 1" width="400px"/>  
-<img src="img/formas5.png" alt="Tablas 2FN 2" width="400px"/>  
+<img src="img/formas4.png" alt="Tablas 2FN 1"/>  
+<img src="img/formas5.png" alt="Tablas 2FN 2"/>  
 
 Tablas en 2FN:
 
@@ -742,16 +742,16 @@ En nuestro ejemplo:
 - Tabla **Articulos_Ordenes** → ya está en 3FN.  
 - Tabla **Ordenes** → **no está** en 3FN, porque `nom_cliente` y `estado` dependen de `Id_cliente`, que no es clave primaria.
 
-<img src="img/formas6.png" alt="Normalización a 3FN" width="400px"/>  
+<img src="img/formas6.png" alt="Normalización a 3FN" width=/>  
 
 Para normalizar: mover columnas no clave y la columna dependiente a otra tabla llamada **Clientes**. Resultado:
 
-<img src="img/formas7.png" alt="Tablas Clientes y Ordenes" width="400px"/>  
+<img src="img/formas7.png" alt="Tablas Clientes y Ordenes" />  
 
 El resultado final es:
 
-<img src="img/formas8.png" alt="Resultado final 3FN" width="400px"/>  
-<img src="img/formas11.png" alt="Tablas finales normalizadas" width="400px"/>  
+<img src="img/formas8.png" alt="Resultado final 3FN"/>  
+<img src="img/formas11.png" alt="Tablas finales normalizadas"/>  
 
 > Nota: en clase trabajaremos hasta la 3FN.  
 Si quieres profundizar en 4FN y 5FN, puedes consultar el siguiente enlace:  
