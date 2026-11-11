@@ -669,7 +669,7 @@ Las formas normales son reglas que aseguran que el esquema tenga buen comportami
 
 En bases de datos relacionales, las **formas normales (FN)** indican el grado de vulnerabilidad de una tabla a inconsistencias y anomalías. Cada FN incluye a las anteriores.
 
-<img src="img/formas1.png" alt="Formas normales" width="400px"/>  
+<img src="img/formas1.png" alt="Formas normales"/>  
 
 **Definiciones previas:**
 
