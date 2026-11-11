@@ -641,7 +641,7 @@ Al diseñar una base de datos se ha de evaluar la calidad del diseño. Hay ocasi
 
 **Ejemplo:** Tabla Suministros. Tenemos esta tabla cuya clave principal es el CodProv + CodArticulo.
 
-| CodProv | CodArticulo | Cantidad | CiudadProv |
+| **CodProv** | **CodArticulo** | Cantidad | CiudadProv |
 |---------|------------|---------|------------|
 | P1      | C1         | 12      | Cantabria  |
 | P1      | C2         | 25      | Cantabria  |
@@ -749,7 +749,7 @@ Para normalizar: mover columnas no clave y la columna dependiente a otra tabla l
 El resultado final es:
 
 <img src="img/formas8.png" alt="Resultado final 3FN"/>  
-<img src="img/formas11.png" alt="Tablas finales normalizadas"/>  
+ 
 
 > Nota: en clase trabajaremos hasta la 3FN.  
 Si quieres profundizar en 4FN y 5FN, puedes consultar el siguiente enlace:  
