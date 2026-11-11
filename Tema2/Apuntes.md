@@ -641,7 +641,7 @@ Al diseñar una base de datos se ha de evaluar la calidad del diseño. Hay ocasi
 
 **Ejemplo:** Tabla Suministros. Tenemos esta tabla cuya clave principal es el CodProv + CodArticulo.
 
-| <u>CodProv</u> | **CodArticulo** | Cantidad | CiudadProv |
+| <u>CodProv</u> | <u>CodArticulo</u> | Cantidad | CiudadProv |
 |---------|------------|---------|------------|
 | P1      | C1         | 12      | Cantabria  |
 | P1      | C2         | 25      | Cantabria  |
