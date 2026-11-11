@@ -637,16 +637,9 @@ Para convertir un modelo E/R a relacional, todo se reduce a **relaciones represe
 
 ## 6.- 🧩 NORMALIZACIÓN
 
-Al diseñar una base de datos se ha de evaluar la calidad del diseño. Para ello, uno de los parámetros que se utiliza son las **formas normales** en las que se encuentra dicho diseño.  
-Se llama **normalización** al proceso de obligar a los atributos incluidos en el diseño a cumplir varias formas normales.
+Al diseñar una base de datos se ha de evaluar la calidad del diseño. Hay ocasiones en que la tabla con la que trabajamos está mal diseñada, y eso nos da problemas cuando estamos trabajando con ella. Lo vemos con un ejemplo.
 
-Las formas normales son reglas que aseguran que el esquema tenga buen comportamiento respecto a:
-
-- Redundancia de información  
-- Pérdida de información  
-- Presentación de la información  
-
-**Ejemplo:** tabla Suministros
+**Ejemplo:** Tabla Suministros. Tenemos esta tabla cuya clave principal es el CodProv + CodArticulo.
 
 | CodProv | CodArticulo | Cantidad | CiudadProv |
 |---------|------------|---------|------------|
@@ -659,15 +652,20 @@ Las formas normales son reglas que aseguran que el esquema tenga buen comportami
 
 Esta tabla presenta redundancia y posibles anomalías:
 
-1. **Anomalías de modificación:** si un proveedor cambia de ciudad, hay que modificar todas las tuplas que lo contengan.  
+1. **Anomalías de modificación:** si un proveedor cambia de ciudad, hay que modificar todas las filas que lo contengan.  
 
-2. **Anomalías de borrado:** si un proveedor deja de suministrar artículos, se pierden sus datos.  
+2. **Anomalías de borrado:** si un proveedor deja de suministrar artículos, se pierden sus datos, porque no podríamos tener una clave principal con un campo vacío.  
 
 3. **Anomalías de inserción:** si queremos añadir un proveedor sin artículos, tendríamos que poner NULL en columnas de clave primaria, rompiendo la integridad referencial.
 
-El origen de estas anomalías: la tabla Suministros describe dos hechos diferentes: los artículos que suministra cada proveedor y el proveedor en sí, que son independientes, aunque se relacionen indirectamente.
+El origen de estos problemas es que la tabla Suministros guarda dos cosas diferentes: los artículos que suministra cada proveedor y el proveedor en sí, que son independientes, aunque se relacionen entre ellos. Si se ha diseñado la BD utilizando el modelo E-R y pasándolo a modelo Relacional, el proceso de normalización no suele ser tan necesario, es decir, el resultado final tiene menos errores.
 
-Si la BD se diseña usando un modelo semántico (E/R), la normalización suele ser menos necesaria.  
+Se llama **normalización** al proceso de obligar a los atributos incluidos en el diseño a cumplir varias formas normales.
+Las formas normales son reglas que aseguran que el esquema tenga buen comportamiento respecto a:
+
+- Redundancia de información  
+- Pérdida de información  
+- Presentación de la información 
 
 En bases de datos relacionales, las **formas normales (FN)** indican el grado de vulnerabilidad de una tabla a inconsistencias y anomalías. Cada FN incluye a las anteriores.
 
