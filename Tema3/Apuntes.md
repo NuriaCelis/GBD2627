@@ -402,6 +402,10 @@ Negación: NOT
 	NOT(x>=5)
 ```
 
+**Resumen**
+
+![TiposDeDatos](img/resumen.png)
+
 # 6.- 🗄 ADMINISTRACIÓN DE TABLAS
 
 Las instrucciones **DDL** para administrar tablas permiten:
