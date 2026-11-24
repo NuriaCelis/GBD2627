@@ -502,13 +502,13 @@ CREATE TABLE Pedidos(
     CONSTRAINT pk_pedidos_idPedidos PRIMARY KEY(idPedidos),
     CONSTRAINT uq_pedidos_producto UNIQUE (producto),
     CONSTRAINT fk_clientes_pedidos FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente) 
-    on delete cascade on update cascade
+    ON DELETE CASCADE ON UPDATE CASCADE
 );
 ```
 
 En este ejemplo estamos creando una tabla con 7 campos, tiene como clave primaria idPedidos, tiene como clave alternativa producto y como clave ajena tiene el idClientes.
 
-![CreacionTabla](img/crearTabla.png)
+
 
 #### ✍️ Ejercicio
 
