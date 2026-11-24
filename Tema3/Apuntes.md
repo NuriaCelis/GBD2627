@@ -475,6 +475,20 @@ CREATE  [TEMPORARY] TABLE  [IF NOT EXISTS] nombre_tabla
 ### 💡 Ejemplo
 
 ```sql
+CREATE TABLE Clientes(
+
+    idCliente       INT AUTO_INCREMENT,
+    nombre           VARCHAR(100) NOT NULL,
+    apellidos        VARCHAR(150) NOT NULL,
+    email            VARCHAR(100) UNIQUE,
+    telefono         CHAR(9),
+    fechaAlta        DATE DEFAULT (CURRENT_DATE),
+
+    CONSTRAINT pk_clientes_idClientes PRIMARY KEY(idClientes)
+
+);
+
+
 CREATE TABLE Pedidos(
 
     idPedidos              INT,
@@ -483,16 +497,18 @@ CREATE TABLE Pedidos(
     precio                 FLOAT,
     fechaPedido            DATE,
     numeroProductos        INT DEFAULT(0),
-    idClientes INT,
+    idCliente INT,
 
     CONSTRAINT pk_pedidos_idPedidos PRIMARY KEY(idPedidos),
     CONSTRAINT uq_pedidos_producto UNIQUE (producto),
-    CONSTRAINT fk_clientes_pedidos FOREIGN KEY (idClientes) REFERENCES Clientes(idClientes)
-
+    CONSTRAINT fk_clientes_pedidos FOREIGN KEY (idCliente) REFERENCES Clientes(idCliente) 
+    on delete cascade on update cascade
 );
 ```
 
 En este ejemplo estamos creando una tabla con 7 campos, tiene como clave primaria idPedidos, tiene como clave alternativa producto y como clave ajena tiene el idClientes.
+
+![CreacionTabla](img/crearTabla.png)
 
 #### ✍️ Ejercicio
 
